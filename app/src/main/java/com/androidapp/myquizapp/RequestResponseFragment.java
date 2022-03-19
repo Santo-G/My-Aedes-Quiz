@@ -1,4 +1,4 @@
-package com.androidapp.myaedesquiz;
+package com.androidapp.myquizapp;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -11,9 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.navigation.Navigation;
-import com.androidapp.myaedesquiz.databinding.FragmentHomeBinding;
-import com.androidapp.myaedesquiz.databinding.FragmentRequestResponseBinding;
-import com.androidapp.myaedesquiz.presenter.MainActivityPresenterImpl;
+import com.androidapp.myquizapp.databinding.FragmentHomeBinding;
+import com.androidapp.myquizapp.databinding.FragmentRequestResponseBinding;
+import com.androidapp.myquizapp.presenter.MainActivityPresenterImpl;
 
 public class RequestResponseFragment extends Fragment implements View.OnClickListener {
 

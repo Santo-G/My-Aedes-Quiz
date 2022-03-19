@@ -1,7 +1,7 @@
-package com.androidapp.myaedesquiz.model;
+package com.androidapp.myquizapp.model;
 
 import android.util.Pair;
-import com.androidapp.myaedesquiz.R;
+import com.androidapp.myquizapp.R;
 
 import java.util.ArrayList;
 

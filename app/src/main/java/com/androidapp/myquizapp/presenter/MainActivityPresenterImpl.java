@@ -1,7 +1,7 @@
-package com.androidapp.myaedesquiz.presenter;
+package com.androidapp.myquizapp.presenter;
 
 import android.util.Pair;
-import com.androidapp.myaedesquiz.model.MainActivityModelImpl;
+import com.androidapp.myquizapp.model.MainActivityModelImpl;
 
 public class MainActivityPresenterImpl implements MainActivityPresenter {
 

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.androidapp.myaedesquiz.HomeFragment"
+        android:name="com.androidapp.myquizapp.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_requestResponseFragment"
@@ -14,6 +14,6 @@
     </fragment>
     <fragment
         android:id="@+id/requestResponseFragment"
-        android:name="com.androidapp.myaedesquiz.RequestResponseFragment"
+        android:name="com.androidapp.myquizapp.RequestResponseFragment"
         android:label="RequestResponseFragment" />
 </navigation>

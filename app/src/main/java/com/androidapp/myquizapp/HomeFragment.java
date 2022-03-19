@@ -1,8 +1,7 @@
-package com.androidapp.myaedesquiz;
+package com.androidapp.myquizapp;
 
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -10,15 +9,12 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import com.androidapp.myaedesquiz.databinding.FragmentHomeBinding;
-import com.androidapp.myaedesquiz.presenter.MainActivityPresenter;
-import com.androidapp.myaedesquiz.presenter.MainActivityPresenterImpl;
-import com.androidapp.myaedesquiz.view.MainActivityView;
+import com.androidapp.myquizapp.databinding.FragmentHomeBinding;
+import com.androidapp.myquizapp.presenter.MainActivityPresenter;
+import com.androidapp.myquizapp.presenter.MainActivityPresenterImpl;
+import com.androidapp.myquizapp.view.MainActivityView;
 import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
 
 public class HomeFragment extends Fragment implements MainActivityView, View.OnClickListener {
 
