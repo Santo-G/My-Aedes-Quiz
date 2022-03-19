@@ -1,2 +1,2 @@
-# My-Aedes-Quiz
+# My-Quiz-App
 Android Java app
