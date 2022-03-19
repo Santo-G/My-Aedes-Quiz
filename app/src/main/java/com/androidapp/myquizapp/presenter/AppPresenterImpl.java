@@ -1,16 +1,16 @@
 package com.androidapp.myquizapp.presenter;
 
 import android.util.Pair;
-import com.androidapp.myquizapp.model.MainActivityModelImpl;
+import com.androidapp.myquizapp.model.AppModelImpl;
 
-public class MainActivityPresenterImpl implements MainActivityPresenter {
+public class AppPresenterImpl implements AppPresenter {
 
-    private MainActivityModelImpl model;
+    private AppModelImpl model;
     private static int scores;
     private int pages = 0;
 
-    public MainActivityPresenterImpl() {
-        model = new MainActivityModelImpl();
+    public AppPresenterImpl() {
+        model = new AppModelImpl();
         scores = 0;
     }
 

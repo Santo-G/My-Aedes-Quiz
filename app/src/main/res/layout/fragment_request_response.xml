@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/custom_blue">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -9,7 +10,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <LinearLayout
-            android:id="@+id/linear_layout"
+            android:id="@+id/ll_request_response"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
@@ -19,60 +20,63 @@
             app:layout_constraintEnd_toEndOf="parent">
 
             <TextView
-                android:id="@+id/question_num_textview"
+                android:id="@+id/tv_question_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:gravity="center_vertical|right"
-                android:text="Page: "
-                android:textColor="#FFFF00"
-                android:textSize="30sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/page"
+                android:textColor="@color/white"
+                android:textSize="20sp"
                 android:padding="20dp" />
 
             <TextView
-                android:id="@+id/score_textview"
+                android:id="@+id/tv_score"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:gravity="center_vertical"
-                android:text="Score:"
-                android:textColor="#FFFF00"
-                android:textSize="30sp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/score"
+                android:textColor="@color/white"
+                android:textSize="20sp"
                 android:padding="20dp" />
 
         </LinearLayout>
 
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardview_question"
+            android:id="@+id/cv_question"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            app:layout_constraintTop_toBottomOf="@+id/linear_layout"
+            app:layout_constraintTop_toBottomOf="@+id/ll_request_response"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:background="@color/custom_blue">
 
                 <ImageView
-                    android:id="@+id/imageview_question"
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:id="@+id/iv_question"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
-                    android:id="@+id/text_view_question"
+                    android:id="@+id/tv_question"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    app:layout_constraintTop_toBottomOf="@+id/imageview_question"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_question"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    android:text="Di che città si tratta ?"
-                    android:textSize="20dp"/>
+                    android:text="@string/choose_the_right_city"
+                    android:textSize="25sp"
+                    android:textColor="@color/custom_light_blue"
+                    android:padding="4dp"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -80,65 +84,65 @@
 
 
         <LinearLayout
-            android:id="@+id/linear_layout_answers"
+            android:id="@+id/ll_answers"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
-            app:layout_constraintTop_toBottomOf="@id/cardview_question"
+            app:layout_constraintTop_toBottomOf="@id/cv_question"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="20dp">
 
             <Button
-                android:id="@+id/londra_button"
-                android:layout_width="wrap_content"
+                android:id="@+id/bt_london"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:text="Londra"
+                android:text="@string/london"
                 android:textSize="20sp"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black" />
 
             <Button
-                android:id="@+id/amsterdam_button"
-                android:layout_width="wrap_content"
+                android:id="@+id/bt_amsterdam"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:gravity="center_horizontal"
-                android:text="Amsterdam"
+                android:text="@string/amsterdam"
                 android:textSize="20sp"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black" />
 
             <Button
-                android:id="@+id/roma_button"
-                android:layout_width="wrap_content"
+                android:id="@+id/bt_rome"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:gravity="center_horizontal"
-                android:text="Roma"
+                android:text="@string/rome"
                 android:textSize="20sp"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black" />
 
             <Button
-                android:id="@+id/parigi_button"
-                android:layout_width="wrap_content"
+                android:id="@+id/bt_paris"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:gravity="center_horizontal"
-                android:text="Parigi"
+                android:text="@string/paris"
                 android:textSize="20sp"
-                android:padding="20dp"
+                android:padding="10dp"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/black" />
 
         </LinearLayout>
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
