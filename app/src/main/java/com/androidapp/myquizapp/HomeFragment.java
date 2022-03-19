@@ -17,7 +17,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
-    private TextView highscoreTextView;
+    private TextView quizAppTextView;
     private Button startButton;
     private AppPresenter appPresenter;
     private FragmentHomeBinding binding;
@@ -36,7 +36,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
 
         view.inflate(getContext(), R.layout.fragment_home, binding.getRoot());
         // find view
-        highscoreTextView = binding.tvHighscore;
+        quizAppTextView = binding.tvQuizapp;
         startButton = binding.btStart;
 
         // set listener on start button

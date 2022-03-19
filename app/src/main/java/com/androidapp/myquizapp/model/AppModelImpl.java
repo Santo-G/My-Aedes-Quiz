@@ -7,12 +7,16 @@ import java.util.ArrayList;
 
 public class AppModelImpl implements AppModel {
 
-    public Pair<Integer, String> getCity() {
-        ArrayList<Pair<Integer, String>> arrayList = new ArrayList<>();
+    private ArrayList<Pair<Integer, String>> arrayList = new ArrayList<>();
+
+    public AppModelImpl() {
         arrayList.add(new Pair<Integer, String>(R.drawable.amsterdam, "amsterdam"));
-        arrayList.add(new Pair<Integer, String>(R.drawable.rome, "roma"));
-        arrayList.add(new Pair<Integer, String>(R.drawable.paris, "parigi"));
-        arrayList.add(new Pair<Integer, String>(R.drawable.london, "londra"));
+        arrayList.add(new Pair<Integer, String>(R.drawable.rome, "rome"));
+        arrayList.add(new Pair<Integer, String>(R.drawable.paris, "paris"));
+        arrayList.add(new Pair<Integer, String>(R.drawable.london, "london"));
+    }
+
+    public Pair<Integer, String> getCity() {
         return arrayList.get((int) (Math.random() * arrayList.size()));
     }
 
