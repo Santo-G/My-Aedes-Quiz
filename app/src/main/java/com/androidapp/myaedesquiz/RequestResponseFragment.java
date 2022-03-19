@@ -79,7 +79,7 @@ public class RequestResponseFragment extends Fragment implements View.OnClickLis
             public void run() {
                 if(mainActivityPresenter.getPages() < 4) {
                     binding.imageviewQuestion.setImageDrawable(getResources().getDrawable(city.first, null));
-                    binding.questionNumTextview.setText("Page:"+mainActivityPresenter.getPages()+1+"/4");
+                    binding.questionNumTextview.setText("Page:"+(mainActivityPresenter.getPages()+1)+"/4");
                     binding.scoreTextview.setText("Score: "+mainActivityPresenter.getScores());
                     mainActivityPresenter.setPages();
                 } else {
