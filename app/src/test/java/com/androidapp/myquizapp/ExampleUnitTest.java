@@ -1,4 +1,4 @@
-package com.androidapp.myaedesquiz;
+package com.androidapp.myquizapp;
 
 import org.junit.Test;
 

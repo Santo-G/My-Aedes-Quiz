@@ -1,4 +1,4 @@
-package com.androidapp.myaedesquiz;
+package com.androidapp.myquizapp;
 
 import android.content.Context;
 import androidx.test.platform.app.InstrumentationRegistry;
