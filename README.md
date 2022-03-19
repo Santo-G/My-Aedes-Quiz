@@ -9,17 +9,17 @@ This project consists of implementing a simple Android Java app demo.
 
 
 ## Project description
-Android Java app that shows 4 questions and records the scores obtained with correct answers. 
-The app consists of 2 fragment: 
+Android Java app that shows 4 questions and records the scores obtained with correct answers.
+The app consists of 2 fragments: 
 - Main fragment
 - Request/response fragment
 
-### Main fragment requirements
+### - Main fragment requirements
 - App logo
 - Start button 
 
-### Request/response fragment requirements
-- Page header containing page number and actual total score
+### - Request/response fragment requirements
+- Page header with page number and updated total score
 - Card containing an image and a related question
 - If player gives the wrong answer the correct answer is shown in a toast message and total score doesn't change
 - If player gives the correct answer 5 points are added to the total score count
