@@ -1,2 +1,2 @@
 # My-Quiz-App
-Android Java app based on MVP pattern
+Android demo Java app based on MVP pattern
