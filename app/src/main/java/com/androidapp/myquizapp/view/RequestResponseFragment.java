@@ -33,6 +33,12 @@ public class RequestResponseFragment extends Fragment implements RequestResponse
                              Bundle savedInstanceState) {
         binding = FragmentRequestResponseBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
+
+        binding.btRome.setBackgroundColor(getResources().getColor(R.color.purple_200));
+        binding.btLondon.setBackgroundColor(getResources().getColor(R.color.purple_200));
+        binding.btParis.setBackgroundColor(getResources().getColor(R.color.purple_200));
+        binding.btAmsterdam.setBackgroundColor(getResources().getColor(R.color.purple_200));
+
         binding.ivQuestion.setImageDrawable(getResources().getDrawable(city.first, null));
         binding.btRome.setOnClickListener(this);
         binding.btLondon.setOnClickListener(this);

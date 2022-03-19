@@ -9,4 +9,6 @@
     <string name="paris">Paris</string>
     <string name="score">Score:</string>
     <string name="page">Page:</string>
+    <string name="start_quiz">START QUIZ</string>
+    <string name="quizapp">QuizApp</string>
 </resources>
