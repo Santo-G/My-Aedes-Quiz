@@ -1,2 +1,2 @@
 # My-Aedes-Quiz
-Android Java app
+Android Java app based on MVP pattern
