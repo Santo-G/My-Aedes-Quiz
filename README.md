@@ -34,6 +34,7 @@ The app consists of 2 fragments:
 ## Tools
 - IntelliJ Idea Ultimate
 - Gradle
+- GitHub Actions
 
 ## Contributing
 <a href="https://github.com/Santo-G">
