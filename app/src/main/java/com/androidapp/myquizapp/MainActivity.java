@@ -15,8 +15,6 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = navHostFragment.getNavController();
     }
 
-
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
